@@ -1,0 +1,35 @@
+﻿@model List<FuncionarioModel>
+
+<h1>Funcionários</h1>
+
+<p>
+    <a asp-action="Novo" class="btn btn-primary">Novo Funcionário</a>
+</p>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var funcionario in Model)
+        {
+            <tr>
+                <td>@funcionario.Id</td>
+                <td>@funcionario.Nome</td>
+                <td>
+                    <div class="btn-group btn-group-nowrap" role="group" aria-label="Ações">
+                        <a asp-action="Read" asp-route-id="@funcionario.Id" class="btn btn-primary">Detalhes</a>
+                        <a asp-action="Update" asp-route-id="@funcionario.Id" class="btn btn-secondary">Editar</a>
+                        <form asp-action="Delete" asp-route-id="@funcionario.Id" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este funcionário?');">
+                            <button type="submit" class="btn btn-danger">Excluir</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

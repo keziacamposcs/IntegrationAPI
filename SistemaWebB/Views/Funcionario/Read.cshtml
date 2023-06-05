@@ -1,0 +1,31 @@
+﻿@model FuncionarioModel
+
+<h1>Detalhes do Funcionário</h1>
+
+<ul>
+    <li><strong>Id:</strong> @Model.Id</li>
+    <li><strong>Nome:</strong> @Model.Nome</li>
+    <li><strong>Sobrenome:</strong> @Model.Sobrenome</li>
+    <li><strong>Sexo:</strong> @Model.Sexo</li>
+    <li><strong>Cpf:</strong> @Model.Cpf</li>
+    <li><strong>Rg:</strong> @Model.Rg</li>
+    <li><strong>Email:</strong> @Model.Email</li>
+    <li><strong>Endereco:</strong> @Model.Endereco</li>
+    <li><strong>Cep:</strong> @Model.Cep</li>
+    <li><strong>Bairro:</strong> @Model.Bairro</li>
+    <li><strong>Cidade:</strong> @Model.Cidade</li>
+    <li><strong>Uf:</strong> @Model.Uf</li>
+    <li><strong>Complemento:</strong> @Model.Complemento</li>
+    <li><strong>Numero:</strong> @Model.Numero</li>
+    <li><strong>DataNascimento:</strong> @Model.DataNascimento</li>
+    <li><strong>DataAdmissao:</strong> @Model.DataAdmissao</li>
+
+    <li><strong>Setor:</strong> @Model.Setor?.Setor</li>
+    <li><strong>Cargo:</strong> @Model.Cargo?.Cargo</li>
+</ul>
+
+<a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-secondary">Editar</a>
+<br />
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este funcionário?');">
+    <button type="submit" class="btn btn-danger">Excluir</button>
+</form>

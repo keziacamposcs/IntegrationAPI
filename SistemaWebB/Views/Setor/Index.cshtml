@@ -1,0 +1,33 @@
+﻿@model List<SetorModel>
+
+<h1>Setores</h1>
+
+<p>
+    <a asp-action="Novo" class="btn btn-primary">Novo Setor</a>
+</p>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Setor</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var setor in Model)
+        {
+            <tr>
+                <td>@setor.Id</td>
+                <td>@setor.Setor</td>
+                <td>
+                    <a asp-action="Read" asp-route-id="@setor.Id" class="btn btn-primary">Detalhes</a>
+                    <a asp-action="Update" asp-route-id="@setor.Id" class="btn btn-secondary">Editar</a>
+                    <form asp-action="Delete" asp-route-id="@setor.Id" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este setor?');">
+                        <button type="submit" class="btn btn-danger">Excluir</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

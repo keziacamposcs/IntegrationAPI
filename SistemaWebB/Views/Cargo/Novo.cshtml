@@ -1,0 +1,15 @@
+﻿@model CargoModel
+@{
+    ViewData["Title"] = "Novo";
+}
+
+<h1>Novo Cargo</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Cargo:</label>
+        <input asp-for="Cargo" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>

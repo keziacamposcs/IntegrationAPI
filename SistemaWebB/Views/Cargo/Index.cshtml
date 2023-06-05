@@ -1,0 +1,33 @@
+﻿@model List<CargoModel>
+
+<h1>Cargos</h1>
+
+<p>
+    <a asp-action="Novo" class="btn btn-primary">Novo Cargo</a>
+</p>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cargo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cargo in Model)
+        {
+            <tr>
+                <td>@cargo.Id</td>
+                <td>@cargo.Cargo</td>
+                <td>
+                    <a asp-action="Read" asp-route-id="@cargo.Id" class="btn btn-primary">Detalhes</a>
+                    <a asp-action="Update" asp-route-id="@cargo.Id" class="btn btn-secondary">Editar</a>
+                    <form asp-action="Delete" asp-route-id="@cargo.Id" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este cargo?');">
+                        <button type="submit" class="btn btn-danger">Excluir</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

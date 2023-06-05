@@ -1,0 +1,15 @@
+﻿@model SetorModel
+@{
+    ViewData["Title"] = "Novo";
+}
+
+<h1>Novo Setor</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Setor:</label>
+        <input asp-for="Setor" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>

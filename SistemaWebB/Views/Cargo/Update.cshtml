@@ -1,0 +1,12 @@
+﻿@model CargoModel
+
+<h1>Editar Cargo</h1>
+
+<form asp-action="Update" method="post">
+    <div class="form-group">
+        <label>Cargo:</label>
+        <input asp-for="Cargo" class="form-control"/>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
