@@ -6,9 +6,9 @@
       <File FileName="Controllers/CargoController.cs" />
       <File FileName="Controllers/CargoControllerAPI.cs" />
       <File FileName="Controllers/FuncionarioControllerAPI.cs" />
-      <File FileName="Program.cs" Line="8" Column="1" />
-      <File FileName="Models/FuncionarioModel.cs" Line="51" Column="6" />
-      <File FileName="Models/SetorModel.cs" Line="18" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Models/FuncionarioModel.cs" />
+      <File FileName="Models/SetorModel.cs" />
       <File FileName="Models/CargoModel.cs" Line="18" Column="1" />
     </Files>
     <Pads>
@@ -16,9 +16,7 @@
         <State name="__root__">
           <Node name="SistemaWebB" expanded="True">
             <Node name="SistemaWebB" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="CargoModel.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Setor" expanded="True" />
               </Node>

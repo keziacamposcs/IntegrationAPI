@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{A1636390-AD6E-4F96-9763-9EFEAD6EE7E7}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SistemaA PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SistemaA PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/DepartamentModel.cs">
     <Files>
-      <File FileName="Program.cs" Line="33" Column="1" />
+      <File FileName="Models/EmployeeModel.cs" Line="27" Column="1" />
+      <File FileName="Models/DepartamentModel.cs" Line="14" Column="1" />
+      <File FileName="Controllers/EmployeeController.cs" Line="60" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,12 +18,14 @@
             <Node name="SistemaA" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="DepartamentModel.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
